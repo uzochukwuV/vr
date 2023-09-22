@@ -7,7 +7,9 @@
     <title>Document</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
-      </style>
+    </style>
+
+
     <style>
         * {
     margin: 0;
@@ -115,12 +117,23 @@ h1 {
 
 /* section 3 */
 #section_3 {
-    background-image: url("./");
+    position: relative;
+    background: linear-gradient(180deg, rgb(58, 57, 57), white, rgb(44, 44, 44));
+    background: url("https://images.pexels.com/photos/1300375/pexels-photo-1300375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    background-blend-mode:darken;
+    height: 500px;
     width: 100%;
-    padding: 0 30px;
+    padding: 0;
+    backdrop-filter: blur(4px);
+    
+    
+}
+
+.gray {
+    backdrop-filter: grayscale(90%);
+    height: 500px;
 }
 .m-5 {
     font-size: 45px;
@@ -128,12 +141,18 @@ h1 {
 }
 
 #sect-3 {
+    
+   
     display: flex;
     flex-direction: column;
     padding: 30px;
+    padding: 30px 5%;
     gap: 40px;
     height: 400px;
     max-width: 650px;
+    color: sandybrown;
+    z-index: 10001;
+    
 }
 
 p {
@@ -151,9 +170,9 @@ p {
     justify-content: space-between;
 }
 .m-5 {
-    padding-top: 100px;
-    font-size: 75px;
-    font-family: sans-serif;
+    padding-top: 70px;
+    font-size: 125px;
+    font-family: 'Fuggles', cursive;
     
 }
 .m-6 {
@@ -161,9 +180,9 @@ p {
     font-size: 35px;
     font-family: sans-serif;
     display: flex;
-    gap: 20px;
     
-    padding: 20px 10%;
+    
+    padding: 32px 5%;
 }
 
 .sect-1_div-2  div {
@@ -180,8 +199,6 @@ p {
 }
 
 #section_4 {
-  background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,7 +218,7 @@ p {
 }
 
 .Price_img_1 {
-    background-image: url("./");
+    background-image: url("https://images.pexels.com/photos/2255459/pexels-photo-2255459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -225,7 +242,7 @@ p {
 }
 
 .Price_img_2 {
-    background-image: url("./");
+    background-image: url("https://images.pexels.com/photos/840111/pexels-photo-840111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -234,7 +251,7 @@ p {
 }
 
 .Price_img_3 {
-   
+   background: url('https://images.pexels.com/photos/1562389/pexels-photo-1562389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -259,9 +276,9 @@ p {
 }
 
 .F_K {
-    height: 700px;
-    width: 400px;
-    min-width: 400px !important;
+    min-height: 400px;
+    width: 100%;
+    max-width: 340px !important;
 }
 .b-9 {
     display: flex;
@@ -363,8 +380,9 @@ div > button {
 
     <!-- section 3 -->
     <section id="section_3">
+        <div class="gray">
         <div id="sect-3">
-            <div><h1 class="m-5">Iyobosa Poultry</h1></div>
+            <div><h1 class="m-5 ">Iyobosa Poultry</h1></div>
             <div>
                 <p> IJP Farms will help provide you with better poultry products 
                     like our poulyrty farm to help optimise your welfare, our 
@@ -374,12 +392,15 @@ div > button {
                 <button>Learn More</button>
             </div>
         </div>
+        </div>
     </section>
 
     <!-- section 4 -->
     <section id="section_4">
         <div>
-            <div class="m-6"><h1>Price for available product</h1></div>
+            <div class="m-6">
+                We are IJP Farms and we offer the best services in town
+            </div>
         </div>   <section id="section-2">
         
     </section>
