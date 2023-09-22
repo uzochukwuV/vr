@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+
+
+        @media screen and (max-width: 760px) {
+    
+    .home {
+        display: block;
+        margin-right: 0;
+    }
+    #sect-1 {
+        gap: 45%;
+    }
+    h1, .m-5 {
+        font-size: 45px !important;
+        margin-left: 2px;
+    }
+    #sect-1 {
+        display: block !important;
+    }
+    .sect-1_div-2 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        display: grid !important;
+        background-color: white;
+        flex-wrap: wrap;
+        color: rgb(255, 255, 255) !important;
+        width: 100% !important;
+        gap: 10px !important;
+        grid-template-columns: 1fr 1fr;
+        background-color: brown;
+        font-weight: 600;
+        
+    }
+
+    a {
+        padding: 0 !important;
+    }
+}
+
+        main {
+            padding: 0 100px;
+            background-color: rgb(243, 243, 243);
+            
+        }
+        section {
+            background-color: white;
+            z-index: 100;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: sandybrown;
+        }
+        
+        h2 {
+            font-size: 35px;
+            color: sandybrown;
+        }
+        
+        
+        h3 {
+            font-size: 30px;
+            color: sandybrown;
+        }
+
+        .div_1-sect {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding-bottom: 40px;
+            margin: 0 3 0px;
+        }
+
+        #img__1 {
+            background-image: url('./vaccine_1.png');
+            height: 450px;
+            width: 100%;
+        }
+
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+        #section-1 {
+    font-family: sans-serif;
+    height: 80px;
+    width: 100%;
+    padding: 0 100px;
+    font-size: 18px;
+    background-color: #000;
+    color: #ffff;
+}
+#sect-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 60px;
+    color: sandybrown;
+}
+.sect-1_div-2{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    border: 1px;
+    font-size: 22px;
+    color: #ffff;
+}
+
+
+.sect-1_div-2  div {
+    padding: 0 5px;
+}
+
+.sect-1_div-2 div:hover, .sect-1_div-2  div:active {
+    height: 50px;
+    background-color: white;
+    color: sandybrown;
+    display: flex;
+    align-items: center;
+    
+    border-radius: 2px;
+}
+
+.N-affiliate {
+    border: 2px solid grey;
+    padding: 8px 6px;
+    background-color: sandybrown;
+    border-radius: 15px;
+}
+
+#id-1_sect{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 60px;
+}
+
+.individual_div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#sect_tor {
+    margin: 0 55px;
+}
+
+.N-affiliate {
+    border: 2px solid grey;
+    padding: 16px 10px;
+    background-color: sandybrown;
+    border-radius: 1px;
+}
+
+.let {
+    padding: 1.8em 0;
+}
+</style>
+</head>
+<body>
+    <header>
+        <section id="section-1">
+            <div id="sect-1">
+            <div class="sect-1_div-1"><h1>IJP</h1></div>
+            <div class="sect-1_div-2">
+                <div><a href="{% url 'home' %}">Home</a></div>
+                <div><a href="{% url 'vaccinatingperiod' %}"> Vaccinating period</a></div>
+                <div><a href="{% url 'Breedsavailable' %}"> Breeds available</a></div>
+                
+                <div><a href="{% url 'about' %}">About us</a></div>
+                
+            </div>
+            </div>
+        </section>
+    </header>
+    <section id="sect_tor">
+    <div>
+        <div class="let">
+            <h2>Proper Feeding</h2>
+        </div>
+        <div>
+            <p>Feed is the greatest expenditure in poultry production and one of the most important inputs for success in productivity and profitability.</p>
+        </div>
+        <div>
+        <div>
+            <p>With solutions delivered through both feed and water, with services and consultancy, you can support performance. You can ultimately reduce the need for antibiotics and set your operation on the path to predictable, consistent profitability.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+    <section id="id-1_sect">
+        <div class="individual_div">
+            <div><h2>The Basic Poultry Nutrition</h2></div>
+            <div><p>Animals eat to acquire the energy and building materials that they need to live and grow.  Animals use energy to perform normal body functions such as breathing, walking, eating, digesting, and maintaining body temperature. Nutrients provide poultry the energy and material needed for the development of bone, flesh, feathers, and eggs. Each of these compounds is important in providing poultry the nutrients they need, and a deficit of even one can have serious health consequences for poultry.</p></div>
+            <div>Feed has six major components:</div>
+            <div>
+                <ul>
+                    <li>Carbohydrates</li>
+                    <li>Proteins</li>
+                    <li>Fats</li>
+                    <li>Vitamins</li>
+                    <li>Minerals</li>
+                    <li>Water</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="individual_div">
+        <div>
+            <h3>Carbohydrates</h3>
+        </div>
+        <div>
+            <p>Carbohydrates (compounds with carbon, hydrogen, and oxygen) are an energy source for animals and make up the largest portion of a poultry diet. Carbohydrates are typically eaten in the form of starch, sugar, cellulose, and other non-starch compounds. Poultry typically do not digest cellulose and the non-starch compounds, referred to as crude fiber, well. However, poultry are able to use most starches and sugars well. Important sources of carbohydrates in poultry diets include corn, wheat, barley, and other grains.</p>
+        </div>
+        </div>
+
+        <div class="individual_div">
+            <div><h3>Protein</h3></div>
+            <div><p>Proteins are complex compounds made up of smaller units called amino acids. After a bird consumes protein, the digestive process breaks down the protein into amino acids. The amino acids are then absorbed by the blood and transported to cells that convert the individual amino acids into the specific proteins required by the animal. Proteins are used in the construction of body tissues such as muscles, nerves, cartilage, skin, feathers, beak, and so on. Egg white is also high in protein.</p></div>
+            <div><p>Amino acids are typically divided into two categories: essential and nonessential. Essential amino acids are those that cannot be made in adequate amounts to meet the needs of the animal. The nonessential amino acids are those that the body can generate in sufficient quantities as long as the appropriate starting material is available. There are 22 amino acids commonly found in feed ingredients. Of these, 11 are essential and must be supplied in the feed. Poultry diets typically contain a variety of feedstuffs because no single ingredient is able to supply all the necessary amino acids in the right levels.</p></div>
+            <div><p>The main sources of protein in poultry diets are plant proteins such as soybean meal, canola meal, corn gluten meal, and so on. Animal proteins used include fishmeal and meat and bone meal. Fishmeal can be used only in limited quantities (less than 5% of the total composition of the diet) or it will give poultry meat and eggs a fishy flavor.</p></div>
+        </div>
+
+
+        <div class="individual_div">
+            <div><h3>Fats</h3></div>
+            <div><p>Fats have two and one-quarter times the calories of carbohydrates by weight. Fat provides nine calories of energy per gram, while carbohydrates while carbohydrates provide only four.  At room temperature, saturated fats are solids and unsaturated fats are liquid. Examples of saturated fats that can be used in poultry diets include tallow, lard, poultry fat, and choice white grease. Examples of usable unsaturated fats include corn oil, soy oil, and canola oil. Common sources of supplemental fat in commercially produced poultry feeds include animal fat, poultry fat, and yellow grease. The high cost of vegetable oils makes including these fats in poultry diets uneconomical.</p></div>
+            <div><p>Fat must be present in the diet for poultry to absorb the fat-soluble vitamins A, D, E, and K. In addition to its role in nutrition, fat is added to feed to reduce grain dust. Fat addition also improves the palatability of feed (that is, makes the feed more appetizing).</p></div>
+            <div><p>Fats are composed of smaller compounds called fatty acids. Fatty acids are responsible for cell membrane integrity and hormone synthesis. Although there are many different fatty acids, poultry have a specific requirement for one—linoleic acid—so it must be included in the diet. Linoleic acid is considered an essential fatty acid because poultry cannot generate it from other nutrients (for example, by converting one fatty acid to another). </p></div>
+        </div>
+
+
+        <div class="individual_div">
+            <div><h3>Vitamins</h3></div>
+            <div><p>Vitamins are a group of organic compounds that poultry require in small quantities. Despite the low requirement levels, vitamins are essential for normal body functions, growth, and reproduction. A deficiency of one or more vitamins can lead to a number of diseases or syndromes.</p></div>
+            <div><p>Some vitamins are produced by microorganisms in the digestive tract. Vitamin D can be produced when sunlight hits the bird’s skin. Other vitamins must be supplied because they are not formed by the birds. Many essential vitamins are partially supplied by feed ingredients such as alfalfa meal and distillers’ dried solubles. A vitamin premix is typically used to compensate for the fluctuating levels of vitamins found naturally in food and to assure adequate levels of all vitamins.</p></div>
+            <div><p>The water-soluble vitamins include vitamin C and the B vitamins. The B vitamins include vitamin B12, biotin, folacin, niacin, pantothenic acid, pyridoxine, riboflavin, and thiamin. The B vitamins are involved in many metabolic functions, including energy metabolism. Poultry can make vitamin C, so there is no dietary requirement established for this vitamin. Vitamin C supplementation, however, has been shown to be useful when birds are stressed. </p></div>
+            <div><p>Vitamins are divided into two categories: fat-soluble and water-soluble. The fat-soluble vitamins are A, D, E, and K. Vitamin A is required for normal growth and development of epithelial tissue (skin and the linings of the digestive, reproductive, and respiratory tracts) and reproduction. Vitamin D3 is required for normal growth, bone development, and eggshell formation. Vitamin K is essential for blood clot formation.</p></div>
+        </div>
+
+        <div class="individual_div">
+            <div><h3>Minerals</h3></div>
+            <div><p>Minerals play a role in bone formation, but minerals are also needed for several other important functions, including the formation of blood cells, blood clotting, enzyme activation, and energy metabolism and for proper muscle fun</p></div>
+            <div><p>The macrominerals include calcium, phosphorus, chlorine, magnesium, potassium, and sodium. Many people are familiar with calcium’s role in proper bone formation and eggshell quality, but calcium’s important role in blood-clot formation and muscle contraction is less well known. Phosphorus is important in bone development, and it is part of cell membranes and is required for many metabolic functions. Chlorine is important in the formation of hydrochloric acid in the stomach and thus plays a role in digestion. Sodium and potassium are electrolytes important for metabolic, muscle, and nerve functions. Magnesium also assists with metabolic and muscle functions.</p></div>
+            <div><p>Grains are low in minerals, so mineral supplements are added to commercial poultry feeds. Limestone or oyster shell are common sources of calcium. Dicalcium phosphate is a common source of phosphorus and calcium. The microminerals are usually supplied in a mineral premix.</p></div>
+        </div>
+
+        <div class="individual_div">
+            <div><h3>Water</h3></div>
+            <div><p>Water is often overlooked, but it is one of the most important nutrients. An animal can live without food longer than it can live without water. In a laying flock, a shortage of water for just a few hours can result in reduced egg production, so clean water should be available at all times. If you do not use automatic waterers, fill the drinkers twice a day. If the drinkers are filled only in the morning, birds can run out of water by midday. A laying hen drinks about 25% of her daily water intake during the last two hours of daylight.</p></div>
+            <div><p>A baby chick is composed of about 80% water. Even though this percentage decreases as a bird gets older, the need for water remains. There is no precise quantity requirement for water because there are several factors that affect the amount of water a bird needs: age, body condition, diet, temperature, water quality, and humidity. As a rule of thumb, poultry consume twice as much water as feed.</p></div>
+            <div><p>Water plays an important role in the body of an animal. Water softens feed and carries it through the digestive tract. As a component of blood (90% of blood content), water carries nutrients from the digestive tract to cells and carries away waste products. Water also helps cool the bird through evaporation. (Birds do not have sweat glands, so their heat loss occurs in the air sacs and lungs through rapid respiration.)</p></div>
+        </div>
+    </section>
+</body>
+</html>

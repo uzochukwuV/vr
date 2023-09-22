@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+        #section-1 {
+    font-family: sans-serif;
+    height: 80px;
+    width: 100%;
+    padding: 0 100px;
+    font-size: 18px;
+    background-color: #000;
+    color: #ffff;
+}
+#sect-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 60px;
+    color: sandybrown;
+}
+.sect-1_div-2{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    border: 1px;
+    font-size: 22px;
+    color: #ffff;
+}
+
+
+.sect-1_div-2  div {
+    padding: 0 5px;
+}
+
+.sect-1_div-2 div:hover, .sect-1_div-2  div:active {
+    height: 50px;
+    background-color: white;
+    color: sandybrown;
+    display: flex;
+    align-items: center;
+    
+    border-radius: 2px;
+}
+.N-affiliate {
+    border: 2px solid grey;
+    padding: 16px 10px;
+    background-color: sandybrown;
+    
+}
+    </style>
+</head>
+<body>
+
+    <section id="section-1">
+        <div id="sect-1">
+        <div class="sect-1_div-1"><h1>IJP</h1></div>
+        <div class="sect-1_div-2">
+            <div><a href="{% url 'home' %}">Home</a></div>
+            <div><a href="{% url 'vaccinatingperiod' %}"> Vaccinating period</a></div>
+            <div><a href="{% url 'Breedsavailable' %}"> Breeds available</a></div>
+            <div><a href="{% url 'AnimalNutrition' %}">Animal Nutrition</a></div>
+            <div><a href="{% url 'about' %}">About us</a></div>
+            <div class="N-affiliate"><a href="{% url 'Healthyfeedpractice' %}">Healthy feed practice</a></div>
+        </div>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>

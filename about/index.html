@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <!-- Load an icon library to show a hanburger menu (bars) on small screen-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+      </style>
+    <style>
+        *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family:  cursive;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* section 1 */
+#section-1 {
+    
+    height: 80px;
+    width: 100%;
+    padding: 0 10%;
+    font-size: 18px;
+    background-color: #000;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sect-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+h1.first {
+    font-size: 60px;
+    
+    color: sandybrown;
+}
+h1 {
+    font-size: 60px;
+    color: sandybrown;
+}
+.sect-1_div-2{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    border: 1px;
+    font-size: 22px;
+    color: #ffff;
+}
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(235, 235, 235);
+}
+
+a {
+text-decoration: none;
+color: inherit;
+font-size: 16px;
+font-weight: normal;
+}
+
+section {
+    padding: 32px 10%;
+    
+    font-size: 1em;
+    font-weight: normal;
+    
+    
+    
+
+}
+
+h4 {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+@media screen and (max-width: 760px) {
+    
+    .home {
+        display: block;
+        margin-right: 0;
+    }
+    #sect-1 {
+        gap: 45%;
+    }
+    h1, .m-5 {
+        font-size: 45px !important;
+        margin-left: 2px;
+    }
+    #sect-1 {
+        display: block !important;
+    }
+    .sect-1_div-2 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        display: grid !important;
+        background-color: white;
+        flex-wrap: wrap;
+        color: rgb(255, 255, 255) !important;
+        width: 100% !important;
+        gap: 10px !important;
+        grid-template-columns: 1fr 1fr;
+        background-color: brown;
+        font-weight: 600;
+        
+    }
+
+    a {
+        padding: 0 !important;
+    }
+}
+
+
+
+.hey {
+    margin-top: 50px;
+}
+    </style>
+<body>
+    <header>
+        <section id="section-1">
+            <div id="sect-1">
+            <div class="sect-1_div-1"><h1>IJP</h1></div>
+            <div class="sect-1_div-2">
+                <div><a class="home" href="{% url 'home' %}">Home</a></div>
+                <div><a href="{% url 'vaccinatingperiod' %}"> Vaccinating period</a></div>
+                <div><a href="{% url 'Breedsavailable' %}"> Breeds available</a></div>
+                <div><a href="{% url 'AnimalNutrition' %}">Animal Nutrition</a></div>
+                <div class="N-affiliate"><a href="{% url 'about' %}">About us</a></div>
+                <div><a href="{% url 'Healthyfeedpractice' %}">Healthy feed practice</a></div>
+            </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="hey">
+        <div>
+            <div><h4>What we aim</h4></div>
+            <div>
+                We want to be an organization where all of us are continuously improving every day interms of production, so webecome the earth’s highest impact business.
+                    We believe that everyone deserves a secure future, and to secure this future, we must END insecurity.
+                    The our agriculture franchise overcomes a key underlying structural problem that keeps Nigerian smallholder farmer members poor – low economies of scale.
+                    We build solutions starting from challenges, rather than try to sell solutions for problems that may or may not exist. We are a network built to deliver benefits.
+                    Our group of businesses built around one vision: serve customers with transparent solutions that bring reliable benefits, with reduced need for antibiotics.
+                    Our mission is to mitigate the impact of antimicrobial resistance by providing comprehensive animal nutrition solutions. To turn our commitment into reality, each of our programs delivers a key dimension of our mission. By pursuing our objectives in animal nutrition, our work contributes to increasing the efficacy of human healthcare.
+                </div>
+        </div>
+        
+            
+          
+    
+
+
+            
+          
+       
+
+       
+       
+
+        
+
+    </section>
+</body>
+</html>

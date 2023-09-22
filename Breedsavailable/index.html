@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        @media screen and (max-width: 760px) {
+    
+    .home {
+        display: block;
+        margin-right: 0;
+    }
+    #sect-1 {
+        gap: 45%;
+    }
+    h1, .m-5 {
+        font-size: 45px !important;
+        margin-left: 2px;
+    }
+    #sect-1 {
+        display: block !important;
+    }
+    .sect-1_div-2 {
+        position: absolute;
+        right: 0;
+        left: 0;
+        display: grid !important;
+        background-color: white;
+        flex-wrap: wrap;
+        color: rgb(255, 255, 255) !important;
+        width: 100% !important;
+        gap: 10px !important;
+        grid-template-columns: 1fr 1fr;
+        background-color: brown;
+        font-weight: 600;
+        
+    }
+
+    a {
+        padding: 0 !important;
+    }
+}
+
+        #general_section {
+            margin: 0 35px;
+        }
+        main {
+            padding: 0 100px;
+            background-color: rgb(243, 243, 243);
+            
+        }
+        section {
+            background-color: white;
+            z-index: 100;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: sandybrown;
+        }
+        
+        h2 {
+            font-size: 35px;
+            color: sandybrown;
+        }
+        
+        
+        h3 {
+            font-size: 30px;
+            color: sandybrown;
+        }
+
+        .div_1-sect {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding-bottom: 40px;
+            margin: 0 3 0px;
+        }
+
+        #img__1 {
+            background-image: url('./vaccine_1.png');
+            height: 450px;
+            width: 100%;
+        }
+
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+        #section-1 {
+    font-family: sans-serif;
+    height: 80px;
+    width: 100%;
+    padding: 0 100px;
+    font-size: 18px;
+    background-color: #000;
+    color: #ffff;
+}
+#sect-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 60px;
+    color: sandybrown;
+}
+.sect-1_div-2{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    border: 1px;
+    font-size: 22px;
+    color: #ffff;
+}
+
+
+.sect-1_div-2  div {
+    padding: 0 5px;
+}
+
+.sect-1_div-2 div:hover, .sect-1_div-2  div:active {
+    height: 50px;
+    background-color: white;
+    color: sandybrown;
+    display: flex;
+    align-items: center;
+    
+    border-radius: 2px;
+}
+
+div > button{
+    width: 200px;
+    height: 40px;
+}
+.N-affiliate {
+    border: 2px solid grey;
+    padding: 16px 10px;
+    background-color: sandybrown;;
+}
+.all_space {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        
+        <section id="section-1">
+            <div id="sect-1">
+            <div class="sect-1_div-1"><h1>IJP</h1></div>
+            <div class="sect-1_div-2">
+                <div><a href="{% url 'home' %}">Home</a></div>
+                <div><a href="{% url 'vaccinatingperiod' %}"> Vaccinating period</a></div>
+                <div class="N-affiliate"><a href="{% url 'Breedsavailable' %}"> Breeds available</a></div>
+               
+                <div><a href="{% url 'about' %}">About us</a></div>
+               
+            </div>
+            </div>
+        </section>
+        
+    </header>
+    <section id="general_section">
+    <section>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div>
+            <ul>
+                <li class="A-flex"><a  class="B-flex" href="#home" aria-expanded="true">BREEDS AVAILABLE</a></li>
+                <li  class="A-flex"><a  class="C-flex" href="#value" aria-expanded="false">BROILER</a></li>
+                <li  class="A-flex"><a  class="D-flex" href="#class" aria-expanded="false">NOILER</a></li>
+                <li  class="A-flex"><a  class="E-flex" href="#name" aria-expanded="false">TURKEY</a></li>
+            </ul>
+            <div class="all_space">
+                <div>
+                <div><h1>BREEDERS</h1></div>
+                <div><p></p></div>
+                <div><button>Learn More</button></div>
+                </div>
+            </div>
+        </div>
+            <div class="all_space">
+            <div><h3>BROILER</h3></div>
+            <div><p>Delivering outcomes that ensure productivity and viability</p></div>
+            <div><p>In today’s dynamic chicken market, producers must meet complex challenges to provide food that satisfies consumer demands. We works to help customers adapt to the evolving marketplace by delivering outcomes that ensure the viability of their brand.</p></div>
+            <div><p>Breed broiler is any chicken (Gallus gallus domesticus) that is bred and raised specifically for meat production. Most commercial broilers reach slaughter weight between four and six weeks of age, although slower growing breeds reach slaughter weight at approximately 14 weeks of age</p></div>
+            </div>
+    </div>
+    <div>
+        <div class="all_space">
+        <div><h3>TURKEY</h3></div>
+        <div><p>Delivering outcomes that ensure productivity and viability</p></div>
+        <div><p>In today’s dynamic chicken market, producers must meet complex challenges to provide food that satisfies consumer demands. Zoetis works to help customers adapt to the evolving marketplace by delivering outcomes that ensure the viability of their brand.</p></div>
+        <div><p>Breed broiler is any chicken (Gallus gallus domesticus) that is bred and raised specifically for meat production. Most commercial broilers reach slaughter weight between four and six weeks of age, although slower growing breeds reach slaughter weight at approximately 14 weeks of age</p></div>
+        </div>
+    </div>
+    </div>
+    </section>
+    </section>
+</body>
+</html>
